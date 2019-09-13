@@ -1,0 +1,304 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>OLP_Program contour toolpath</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="HelpPage.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px;}
+     a.dropdown-toggle {
+                       text-decoration: none;
+                      color: #ffffff;
+                      font-style: italic;
+     }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+</head>
+
+
+<table style="border:none; border-spacing:0px; padding:0px; margin-left:5px;background: #2f2f2f ,">
+<tr>
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Program contour based toolpath</span></h1>
+
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" style="border:none;border-spacing:0px; margin-left:5px;background: #2f2f2f;"><tr style="vertical-align:top"><td style="text-align:left;padding:0px">
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 50px 0px 20px;"><table style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_pagelink"><img src="page_12white.png" width="12" height="12" alt="Page_12White" style="border:none" /><span class="f_pagelink"> <a href="pfunc_olp_programtoolpath.html" class="topiclink" style="font-size: 11pt; font-family: Arial; font-style: italic; font-weight: normal; color: #acc334; background-color: transparent; text-decoration: none;">Program toolpath</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p><img src="olp_toolpath.png" width="40" height="40" alt="OLP_Toolpath" style="border:none" /></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p>The <span class="f_command">Program toolpath</span> command can be executed on contour based process geometry.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; height:18px; padding:0px;"><p>When selecting a contour PG the so called manufacturing geometry is displayed. It consist of a few symbols located on the PG.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table class="display" style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td rowspan="3" style="vertical-align:top; width:160px; padding:3px;"><p><img src="olp_toolpath_2a_zoom50.png" width="175" height="100" alt="OLP_Toolpath_2a" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; width:80px; padding:3px;"><p style="text-align: center;"><img src="olp_toolpath_3a.png" width="60" height="60" alt="OLP_Toolpath_3a" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:250px; padding:3px;"><p>The green cone is placed at the start of the contour, pointing in motion direction.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:80px; padding:3px;"><p style="text-align: center;"><img src="olp_toolpath_3b.png" width="60" height="60" alt="OLP_Toolpath_3b" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:250px; padding:3px;"><p>The red cone is placed at the end of the contour, pointing to the start.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:80px; padding:3px;"><p style="text-align: center;"><img src="olp_toolpath_3c.png" width="60" height="60" alt="OLP_Toolpath_3c" style="border:none" /></p>
+</td>
+<td style="vertical-align:top; width:250px; padding:3px;"><p>The yellow double cone, placed at the start, indicates the (normal) side from where the start position will be approached.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p>Double click on a marker will switch side. When the start or end position marker is double clicked, the start position becomes end position. When the approach marker is double clicked, the side will swap 180 degrees.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; height:16px; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table class="display" style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:middle;">
+<td style="vertical-align:middle; padding:3px;"><p class="p_imagecentre"><img src="olp_toolpath_2a_zoom50.png" width="175" height="100" alt="OLP_Toolpath_2a" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; padding:3px;"><p class="p_imagecentre"><img src="olp_toolpath_2b_zoom50.png" width="175" height="100" alt="OLP_Toolpath_2b" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; padding:3px;"><p class="p_imagecentre"><img src="olp_toolpath_2c_zoom50.png" width="175" height="100" alt="OLP_Toolpath_2c" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p>Furthermore the start and end position of the manufacturing geometry along the contour can be modified. By default the whole PG contour will be selected for the to be generated tool path. But with dragging the start or end marker, the manufacturing geometry (and resulting toolpath) can be defined for only a part of the contour.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table class="display" style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:middle;">
+<td style="vertical-align:middle; padding:3px;"><p class="p_imagecentre"><img src="olp_toolpath_2a_zoom50.png" width="175" height="100" alt="OLP_Toolpath_2a" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; padding:3px;"><p class="p_imagecentre"><img src="olp_toolpath_2d_zoom50.png" width="175" height="100" alt="OLP_Toolpath_2d" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p>When dragging the start or end marker, a supporting dashed line with attached sphere appears. The sphere indicates the nearest exact limit point on the contour element over which the marker is dragged. Pressing the <img src="keyboardbutton_shift.png" width="30" height="25" alt="KeyboardButton_Shift" style="border:none" /> key before releasing the left mouse button will place the marker at that exact position.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table class="display" style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:middle;">
+<td style="vertical-align:middle; padding:3px;"><p class="p_imagecentre"><img src="olp_toolpath_17a_zoom50.png" width="175" height="100" alt="OLP_Toolpath_17a" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; padding:3px;"><p class="p_imagecentre"><img src="olp_toolpath_17b_zoom50.png" width="175" height="100" alt="OLP_Toolpath_17b" style="border:none" /></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p>On the selection a Pie menu can be opened:</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Imageindent"><span class="f_Imageindent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 24px;"><table class="pie" style="border:none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td rowspan="5" style="vertical-align:top; width:150px; padding:0px;"><p><img src="1_olp_toolpathcreatecontour.png" width="150" height="150" alt="1_OLP_ToolpathCreateContour" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; width:40px; padding:0px;"><p><img src="manipulator.png" width="40" height="40" alt="Manipulator" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; width:200px; padding:0px;"><p><span class="f_pagelink"><a href="pfunc_togglemanipulator.html" class="topiclink" style="font-size: 11pt; font-family: Arial; font-style: italic; font-weight: normal; color: #acc334; background-color: transparent; text-decoration: none;">Activate Manipulator</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:40px; padding:0px;"><p><img src="olp_insertoperation.png" width="40" height="40" alt="OLP_InsertOperation" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; width:200px; padding:0px;"><p class="p_pagelink"><span class="f_pagelink"><a href="pfunc_olp_insertoperation.html" class="topiclink" style="font-size: 11pt; font-family: Arial; font-style: italic; font-weight: normal; color: #acc334; background-color: transparent; text-decoration: none;">Insert operation</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:40px; padding:0px;"><p><img src="select.png" width="40" height="40" alt="Select" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; width:200px; padding:0px;"><p class="p_pagelink"><span class="f_pagelink"><a href="ppie_olp_selectpg.html" class="topiclink" style="font-size: 11pt; font-family: Arial; font-style: italic; font-weight: normal; color: #acc334; background-color: transparent; text-decoration: none;">Select process geometry</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:40px; padding:0px;"><p><img src="olp_toolpathcompute.png" width="40" height="40" alt="OLP_ToolpathCompute" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; width:200px; padding:0px;"><p><span class="f_pagelink"><a href="pfunc_olp_programpg.html" class="topiclink" style="font-size: 11pt; font-family: Arial; font-style: italic; font-weight: normal; color: #acc334; background-color: transparent; text-decoration: none;">Program process geometry</a></span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:40px; padding:0px;"><p><img src="view_pan.png" width="40" height="40" alt="View_Pan" style="border:none" /></p>
+</td>
+<td style="vertical-align:middle; width:200px; padding:0px;"><p><span class="f_pagelink"><a href="pfunc_olp_movepg.html" class="topiclink" style="font-size: 11pt; font-family: Arial; font-style: italic; font-weight: normal; color: #acc334; background-color: transparent; text-decoration: none;">Move process geometry</a></span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_bold"><span class="f_bold">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p>After computation the tool path is displayed. Contour process geometry will be approximated when the tool path is computed. The method and accuracy of the approximation is defined in the program settings. When generating the tool path, a tool path element will be placed at each approximation limit, connected with a path direction line.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Imageindent"><img src="olp_toolpath_9_zoom60.png" width="180" height="120" alt="OLP_Toolpath_9" style="border:none" /></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Imageindent"><span class="f_Imageindent">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p>When a circular approximation is applied, an additional tool path element is created in the middle of each approximated arc segment. This tool path element is called a <span class="f_option">via point</span> and is recognized as dotted axis.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_bold"><span class="f_bold">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_Imageindent"><img src="olp_toolpath_10_zoom60.png" width="180" height="120" alt="OLP_Toolpath_10" style="border:none" /></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p>Existing contour based toolpaths can be modified. When selecting the toolpath, the manufacturing geometry is displayed and can be adjusted. And also a Pie menu can be opened to start the <span class="f_command"><a href="pfunc_object_move.html" class="topiclink" style="font-size: 11pt; font-family: Arial; font-style: normal; font-weight: bold; color: #acc334; background-color: transparent; text-decoration: none;">Move</a></span> command.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p>Changes made here immediately initiate a recomputation of the toolpath.</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><br />
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_pagelink"><img src="page_12white.png" width="12" height="12" alt="Page_12White" style="border:none" /><span class="f_pagelink"> <a href="pref_olp_toolpath.html" class="topiclink" style="font-size: 11pt; font-family: Arial; font-style: italic; font-weight: normal; color: #acc334; background-color: transparent; text-decoration: none;">Toolpath</a> </span>reference<span class="f_pagelink"> </span>information</p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:0px;"><p class="p_pagelink"><span class="f_pagelink">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>
