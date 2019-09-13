@@ -1,0 +1,251 @@
+/* Text Styles */
+hr { color: #ffffff}
+body, table, tr, th /* Normal */
+{
+ font-size: 10pt;
+ font-family: Arial;
+ font-style: normal;
+ font-weight: normal;
+ color: #ffffff;
+ text-decoration: none;
+  background:#2f2f2f;
+}
+span.f_12ptbold /* 12pt bold */
+{
+ font-size: 12pt;
+ font-weight: bold;
+}
+span.f_14ptheader /* 14pt header */
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #c0c0c0;
+}
+span.f_14ptheadergreen /* 14pt header green */
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #acc334;
+}
+span.f_16ptgreen /* 16pt green */
+{
+ font-size: 16pt;
+ font-weight: bold;
+ color: #acc334;
+}
+span.f_16ptparagraph /* 16pt paragraph */
+{
+ font-size: 12pt;
+ font-weight: bold;
+}
+span.f_16pttoggle /* 16pt toggle */
+{
+ font-size: 11pt;
+ font-weight: normal;
+}
+span.f_18pt /* 18pt  */
+{
+ font-size: 18pt;
+ font-weight: bold;
+ color: #404040;
+}
+span.f_bold /* bold */
+{
+ font-weight: bold;
+}
+span.f_CodeExample /* Code Example */
+{
+ font-size: 8pt;
+ font-family: 'Courier New';
+ color: #000000;
+}
+span.f_command /* command */
+{
+ font-weight: bold;
+}
+span.f_Comment /* Comment */
+{
+}
+span.f_green /* green */
+{
+ color: #acc334;
+}
+span.f_GuidePagetable /* GuidePage table */
+{
+ color: #2f2f2f;
+}
+span.f_GuideReftable /* GuideRef table  */
+{
+ color: #2f2f2f;
+}
+span.f_Heading1 /* Heading1 */
+{
+ font-size: 12pt;
+ font-weight: bold;
+ color: #acc334;
+}
+span.f_ImageCaption /* Image Caption */
+{
+ font-size: 8pt;
+ font-weight: bold;
+}
+span.f_ImageCaption2 /* Image Caption2 */
+{
+ font-size: 4pt;
+ font-weight: bold;
+}
+span.f_imagecentre /* image centre */
+{
+}
+span.f_Imageindent /* Image indent */
+{
+}
+span.f_Notes /* Notes */
+{
+}
+span.f_option /* option */
+{
+ font-style: italic;
+}
+span.f_pagelink /* page link */
+{
+ font-style: italic;
+ color: #acc334;
+}
+span.f_tablefooter /* table footer */
+{
+}
+span.f_tableheader /* table header */
+{
+ font-weight: bold;
+}
+/* Paragraph styles */
+p /* Normal */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.p_12ptbold /* 12pt bold */
+{
+}
+.p_14ptheader /* 14pt header */
+{
+}
+.p_14ptheadergreen /* 14pt header green */
+{
+}
+.p_16ptgreen /* 16pt green */
+{
+}
+.p_16ptparagraph /* 16pt paragraph */
+{
+}
+.p_16pttoggle /* 16pt toggle */
+{
+}
+.p_18pt /* 18pt  */
+{
+}
+.p_bold /* bold */
+{
+}
+.p_CodeExample /* Code Example */
+{
+ white-space: nowrap;
+}
+.p_command /* command */
+{
+}
+.p_Comment /* Comment */
+{
+}
+.p_green /* green */
+{
+}
+.p_GuidePagetable /* GuidePage table */
+{
+ margin: 0px 100px 0px 20px;
+}
+.p_GuideReftable /* GuideRef table  */
+{
+}
+.p_Heading1 /* Heading1 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 20px;
+}
+.p_ImageCaption /* Image Caption */
+{
+}
+.p_ImageCaption2 /* Image Caption2 */
+{
+font-size: 20%;
+}
+.p_imagecentre /* image centre */
+{
+ text-align: center;
+}
+.p_Imageindent /* Image indent */
+{
+ margin: 0px 0px 0px 24px;
+}
+.p_Notes /* Notes */
+{
+}
+.p_option /* option */
+{
+}
+.p_pagelink /* page link */
+{
+}
+.p_tablefooter /* table footer */
+{
+ text-align: center;
+}
+.p_tableheader /* table header */
+{
+ text-align: center;
+}
+
+
+#hmpopupdiv /* used for javascript text popups */
+{
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: #FFFFFF;
+  padding: 6px;
+  border:1px solid #FFFFFF;
+}
+
+#hmlightbox /* image lightbox */
+{
+  border: none;
+  padding: 8px;
+  background: #FFF;
+  font-size: 110%;
+  font-weight: bold;
+  color: #777;
+  box-shadow: 5px 5px 5px #888;
+}
+
+a.dropdown-toggle /* dropdown toggle caption */
+{
+  cursor: pointer;
+}
+a.inline-toggle /* inline toggle caption */
+{
+  cursor: pointer;
+}
+img.dropdown-toggle-icon /* toggle icon */
+{
+  cursor: pointer;
+  src: open16.png;
+}
+
